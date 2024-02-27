@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="w-screen min-h-screen bg-gradient-to-r from-rose-100 to-teal-100">
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div class="flex flex-col items-center text-center">
+      <div class="flex items-center">
+        <h1 class="mr-3 text-5xl font-semibold">Chat with any PDF</h1>
+      </div>
+
+      <div class="flex mt-2">
+        <a routerLink="/chat">
+          <button
+            type="button"
+            class="mt-2 text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          >
+            Go to Chats
+          </button>
+        </a>
+        <div class="ml-3"></div>
+      </div>
+
+      <p class="max-w-xl mt-1 text-lg text-slate-600">
+        Instantly anwer questions and understand research with AI
+      </p>
+
+      <div class="w-full mt-4">
+        <app-upload-file></app-upload-file>
+      </div>
+
+      <div class="mt-6 flex justify-between">
+        <div class="w-[30%]">
+          <img
+            src="http://media.giphy.com/media/7jtU9sxHNLZuv8HZCa/giphy.gif"
+            alt="Sample Image or Gif"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+
+        <div class="w-[30%]">
+          <img
+            src="http://media.giphy.com/media/S60CrN9iMxFlyp7uM8/giphy.gif"
+            alt="Sample Image or Gif"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+
+        <div class="w-[30%]">
+          <img
+            src="http://media.giphy.com/media/ITRemFlr5tS39AzQUL/giphy-downsized-large.gif"
+            alt="Sample Image or Gif"
+            class="w-full rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

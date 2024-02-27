@@ -1,0 +1,28 @@
+@for (user of users; track user.id) {
+<div className="flex flex-col gap-2 px-4">
+  <div
+    [ngClass]="{
+      user: user.name === 'Kristiyan',
+      assistant: user.name === 'Emiliyan'
+    }"
+  >
+    <div
+      [ngClass]="{
+        'rounded-lg': true,
+        'px-3': true,
+        'text-sm': true,
+        'py-1': true,
+        'shadow-md': true,
+        'ring-1': true,
+        'ring-gray-200': true,
+        'bg-blue-600': user.name === 'Kristiyan',
+        'text-white': user.name === 'Kristiyan',
+        'bg-gray-100': user.name === 'Emiliyan',
+        'text-gray-800': user.name === 'Emiliyan'
+      }"
+    >
+      <p>{{ user.name }}</p>
+    </div>
+  </div>
+</div>
+}
